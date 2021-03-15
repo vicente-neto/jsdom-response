@@ -38,5 +38,28 @@
     </div>
 </body>
 <script>
+    var bta = document.getElementById("bt-a");
+    var btb = document.getElementById("bt-b");
+    var btc = document.getElementById("bt-c");
+
+
+    bta.addEventListener("click",function() {
+        var total = parseFloat(document.getElementById("total").innerHTML);
+        total += 5.00;
+        document.getElementById("total").innerHTML = total.toFixed(2);
+    });
+
+    btb.addEventListener("click",function() {
+        var total = parseFloat(document.getElementById("total").innerHTML);
+        total += 10.00;
+        document.getElementById("total").innerHTML = total.toFixed(2);
+    });
+
+    btc.addEventListener("click",function() {
+        var total = parseFloat(document.getElementById("total").innerHTML);
+        total += 20.00;
+        document.getElementById("total").innerHTML = total.toFixed(2);
+    });
+
 </script>
 </html>
